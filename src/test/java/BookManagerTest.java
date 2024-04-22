@@ -17,13 +17,11 @@ public class BookManagerTest {
 
     @BeforeClass
     public void setUpClass() {
-        // Setup for the entire test class
         bookManager = new BookManager();
     }
 
     @BeforeMethod
     public void setUpMethod() {
-        // Setup for each test method
         testBook = new Book("1", "Test Book", "Author Name", Genre.PHILOSOPHICAL_FICTION);
         bookManager.addBook(testBook);
     }
